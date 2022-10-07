@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build MSM8169 OpenWrt
+name: Build MSM8169-sp970 OpenWrt
 
 on:
   repository_dispatch:
