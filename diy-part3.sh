@@ -16,11 +16,11 @@ sed -i 's/192.168.15.1/192.168.50.2/g' package/base-files/files/bin/config_gener
 
 #22.03 golong
 
-#pushd feeds/packages/lang
+pushd feeds/packages/lang
 
-#rm -rf golang && svn co https://github.com/openwrt/packages/branches/openwrt-22.03/lang/golang
+rm -rf golang && svn co https://github.com/openwrt/packages/branches/openwrt-22.03/lang/golang
 
-#popd
+popd
 
 
 # 删除原来的adbyby
