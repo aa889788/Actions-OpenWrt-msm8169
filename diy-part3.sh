@@ -13,6 +13,8 @@
 # Modify default IP
 sed -i 's/192.168.15.1/192.168.50.2/g' package/base-files/files/bin/config_generate
 
+sed -i 's/HOSTLDLIBS_extract-cert = $(shell $(HOSTPKG_CONFIG) --libs libcrypto 2> /dev/null || echo -Icrypto)/HOSTLDLIBS_extract-cert = - lcrypto - lpthread/g' /workdir/openwrt/build_dir/target-aarch64_generic_musl/linux-msm89xx_msm8916/linux-6.1/certs/Makefile
+
 
 #22.03 golong
 
