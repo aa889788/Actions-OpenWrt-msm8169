@@ -13,9 +13,9 @@
 # Modify default IP
 sed -i 's/192.168.15.1/192.168.50.2/g' package/base-files/files/bin/config_generate
 
-sed -i -e '88 s/^/#/' /openwrt/build_dir/target-aarch64_generic_musl/linux-msm89xx_msm8916/linux-6.1/certs/Makefile
+sed -i -e '88 s/^/#/' /workdir/openwrt/build_dir/target-aarch64_generic_musl/linux-msm89xx_msm8916/linux-6.1/certs/Makefile
 
-sed -i "88 s/^/HOSTLDLIBS_extract-cert = - lcrypto - lpthread/" /openwrt/build_dir/target-aarch64_generic_musl/linux-msm89xx_msm8916/linux-6.1/certs/Makefile
+sed -i "88 s/^/HOSTLDLIBS_extract-cert = - lcrypto - lpthread/" /workdir/openwrt/build_dir/target-aarch64_generic_musl/linux-msm89xx_msm8916/linux-6.1/certs/Makefile
 
 
 #22.03 golong
